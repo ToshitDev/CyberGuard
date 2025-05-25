@@ -12,3 +12,7 @@ CyberGuard is a beginner-friendly, Python-powered port scanner and banner grabbe
 Make sure Nmap is installed:
 ```bash
 brew install nmap
+
+### 🖼️ CyberGuard Web UI
+
+![CyberGuard Screenshot](assets/cyberguard_ui.png)
