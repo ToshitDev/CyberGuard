@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CyberGuard Web</title>
+</head>
+<body>
+    <h1>CyberGuard Scanner</h1>
+    <form method="POST">
+        <input type="text" name="target" placeholder="Enter IP or domain" required>
+        <button type="submit">Scan</button>
+    </form>
+
+    {% if target %}
+        <h2>Results for {{ target }}</h2>
+
+        <h3>Open Ports:</h3>
+        <ul>
+            {% for entry in results %}
+                <li>Port: {{ entry.port }} | State: {{ entry.state }} | Banner: {{ entry.banner }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Shodan Info:</h3>
+        <ul>
+            {% for key, value in info.items() %}
+                <li>{{ key.capitalize() }}: {{ value }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

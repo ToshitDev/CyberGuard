@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CyberGuard Report - {{ target }}</title>
+</head>
+<body>
+    <h1>Scan Report for {{ target }}</h1>
+
+    <h2>Open Ports:</h2>
+    <ul>
+    {% for entry in results %}
+        <li>Port: {{ entry.port }} | State: {{ entry.state }} | Banner: {{ entry.banner }}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Shodan Info:</h2>
+    <ul>
+    {% for key, value in shodan_info.items() %}
+        <li>{{ key.capitalize() }}: {{ value }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

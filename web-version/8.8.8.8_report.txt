@@ -1,0 +1,18 @@
+Scan Report for 8.8.8.8
+========================================
+Port: 53
+State: open
+Banner: N/A
+--------------------
+Port: 443
+State: open
+Banner: N/A
+--------------------
+
+📡 Shodan Info:
+Organization: Google LLC
+Operating_system: None
+Open_ports: [443, 53]
+Hostnames: ['dns.google']
+City: Mountain View
+Country: United States
