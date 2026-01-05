@@ -74,10 +74,10 @@ CyberGuard/
 ├── web-version/
 │   ├── app.py               # Flask app
 │   ├── templates/
-│   │   └── index.html       # Web UI template
+│   │   └── index.html       
 │   └── [reports]
 ├── assets/
-│   └── cyberguard_ui.png    # Screenshot for README
+│   └── cyberguard_ui.png   
 ```
 
 ---
